@@ -19,6 +19,17 @@ The Abstract Project is designed to enhance your frontend development skills by 
 - `style.css`: CSS file for styling the HTML elements.
 - `script.js`: JavaScript file for adding interactivity to the navigation bar.
 
+## Screenshots
+
+![Desktop View](images/1.png)
+![Desktop View](images/2.png)
+
+![Mobile View](images/3.png)
+![Mobile View](images/4.png)
+![Mobile View](images/5.png)
+![Mobile View](images/6.png)
+
+
 ## Getting Started
 
 1. Clone the repository to your local machine:
