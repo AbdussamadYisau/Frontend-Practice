@@ -48,13 +48,13 @@ nav div:first-child {
 }
 
 
-nav div:last-child {
+nav div.buttons {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-nav div:last-child button {
+nav div.buttons button {
     padding: 8px 12px 8px 12px;
     font-size: 18px;
     font-weight: 400;
@@ -81,6 +81,10 @@ nav div:last-child button {
 .submit-request-button:hover, .sign-in-button:hover {
     background-color: white;
     color: black;
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .how-can-we-help-section {
@@ -251,8 +255,32 @@ footer div:last-child p {
     nav {
         padding: 10px 20px 10px 20px;
     }
-    nav div:last-child {
+    nav div.buttons {
         display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu:hover {
+        cursor: pointer;
+    }
+
+    .submit-request-button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        width: 100%;
+    }
+    
+    .sign-in-button {
+    
+        background-color: transparent;
+        border: none;
+        color: white;
+        width: 100%;
+    
     }
 
     .our-services-section {
@@ -272,6 +300,8 @@ footer div:last-child p {
         flex-shrink: 0;
         flex-basis: 250px;
     }
+
+    
 }
 
 @media screen and (max-width: 425px) {
