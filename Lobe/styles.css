@@ -9,14 +9,20 @@
 a {
     text-decoration: none;
 }
+
+.nav-wrapper {
+    position: fixed;
+    padding: 10px 0 30px 0;
+    top: 0;
+    background-color: white;
+    z-index: 4;
+    width: 100vw;
+}
 nav {
-  /* width: 100%; */
   position: relative;
   margin: 0px 64px 0px 64px;
-  /* padding: 0px 40px 0px 40px; */
   padding-top: 20px;
   display: flex;
-
   align-items: center;
 }
 
@@ -233,7 +239,7 @@ footer {
 
 .footer-copywrite div {
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 24px;
   line-height: 1;
 }
@@ -280,4 +286,56 @@ footer {
     justify-content: center;
     align-items: center;
     transition: .1s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+    h1, h1 span {
+        font-size: 54px;
+    }
+
+    .content p {
+        max-width: 550px;
+        font-size: 24px;
+    }
+
+    .content .video-background-container {
+        padding-top: 359px;
+        margin-bottom: 80px;
+    }
+
+    .video-poster img {
+        width: 640px;
+    }
+
+    .download-content h1 {
+        max-width: 400px;
+        font-size: 56px;
+    }
+    footer {
+        margin: 0;
+
+    }
+    .footer-container {
+        gap: 18px;
+    }
+    .footer-copywrite div {
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .footer-social-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-social-link {
+        width: auto;
+        height: auto;
+    }
+    .footer-social-link svg {
+        width: 40px;
+        height: 40px;
+
+    }
+
+  
 }
