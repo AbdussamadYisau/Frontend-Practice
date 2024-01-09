@@ -288,6 +288,10 @@ footer {
     transition: .1s ease-in;
 }
 
+.footer-container-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     h1, h1 span {
         font-size: 54px;
@@ -311,6 +315,7 @@ footer {
         max-width: 400px;
         font-size: 56px;
     }
+
     footer {
         margin: 0;
 
@@ -328,8 +333,8 @@ footer {
     }
 
     .footer-social-link {
-        width: auto;
-        height: auto;
+        width: 40px;
+        height: 40px;
     }
     .footer-social-link svg {
         width: 40px;
@@ -337,5 +342,93 @@ footer {
 
     }
 
+
+    .footer-column-link {
+        font-size: 16px;
+    }
   
+}
+
+@media screen and (max-width: 425px) { 
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    h1, h1 span {
+        font-size: 38px;
+    }
+
+    .content p {
+        font-size: 18px;
+        max-width: 420px;
+    }
+
+    .content .video-background-container {
+        padding-top: 250px;
+        margin-bottom: 20px;
+    }
+
+    .video-poster img {
+        width: 361px;
+    }
+
+    .download-content h1 {
+        max-width: 300px;
+        font-size: 38px;
+        margin-bottom: 32px;
+    }
+
+    .download-content .large-download {
+        width: 148px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+   .footer-container {
+    display: none;
+   }
+
+   .footer-container-mobile {
+    display: block;
+    padding: 62px 24px;
+   }
+
+   .footer-container-mobile .footer-left {
+    text-align: center;
+   }
+
+   .footer-right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 350px;
+    margin: auto;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        flex: 1 1;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    .footer-social-links {
+        flex-direction: column;
+        flex: 1 1;
+        align-items: center;
+        padding: 0 16px;
+        justify-content: center;
+    }
+
+    .footer-copywrite div {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+   
+    
 }
