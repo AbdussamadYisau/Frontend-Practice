@@ -32,3 +32,8 @@ function closeModal() {
     }
 });
 
+
+function clickHamburgerMenu() {
+    const menu = document.querySelector('.mobile-nav-links');
+    menu.classList.toggle('mobile-links-active');
+}

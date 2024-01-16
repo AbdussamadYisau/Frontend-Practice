@@ -91,6 +91,10 @@ nav .navigation {
 .mobile-nav {
   display: none;
 }
+
+.mobile-nav-links {
+  display: none;
+}
 .content {
   margin-top: 80px;
   text-align: center;
@@ -392,15 +396,18 @@ footer {
 
   .hamburger {
     cursor: pointer;
-    transform: translate(-8px,-1px);
-    transform: translate(-9px,-1px);
-}
+    transform: translate(-8px, -1px);
+    transform: translate(-9px, -1px);
+  }
 
-
-.hamburger span, .hamburger span:after, .hamburger span:before {
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
-}
-.hamburger span, .hamburger span:after, .hamburger span:before {
+  .hamburger span,
+  .hamburger span:after,
+  .hamburger span:before {
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .hamburger span,
+  .hamburger span:after,
+  .hamburger span:before {
     cursor: pointer;
     border-radius: 1px;
     height: 2px;
@@ -409,17 +416,72 @@ footer {
     position: absolute;
     display: inline-block;
     content: "";
-}
+  }
 
-.hamburger span:before {
-  top: -5px;
-  left: 0;
-}
+  .hamburger span:before {
+    top: -5px;
+    left: 0;
+  }
 
-.hamburger span:after {
-  bottom: -5px;
-  left: 0;
-}
+  .hamburger span:after {
+    bottom: -5px;
+    left: 0;
+  }
+
+  .mobile-links-active {
+
+    position: sticky;
+    padding: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    background: hsla(0,0%,100%,.97);
+    backdrop-filter: blur(20px);
+    z-index: 12;
+  }
+
+  .mobile-links-active .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .mobile-links-active .navigation .nav-link {
+    margin: 0;
+    text-align: left;
+    padding: 20px 0;
+    margin: 0;
+    line-height: 1.2;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mobile-links-active button {
+    margin-top: 37px;
+     /* Button styles */
+  outline: none;
+
+  background-color: #04ddb2;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  height: 50px;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+
+  transition: 0.2s ease-in-out;
+  }
+
+  
+  .content {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 
   h1,
   h1 span {
@@ -444,6 +506,8 @@ footer {
     max-width: 300px;
     font-size: 38px;
     margin-bottom: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .download-content .large-download {
