@@ -34,6 +34,6 @@ function closeModal() {
 
 
 function clickHamburgerMenu() {
-    const menu = document.querySelector('.mobile-nav-links');
-    menu.classList.toggle('mobile-links-active');
+  var mobileNavLinks = document.getElementById('mobileNavLinks');
+  mobileNavLinks.classList.toggle('mobile-links-active');
 }

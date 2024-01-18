@@ -93,7 +93,7 @@ nav .navigation {
 }
 
 .mobile-nav-links {
-  display: none;
+  /* display: none; */
 }
 .content {
   margin-top: 80px;
@@ -428,7 +428,21 @@ footer {
     left: 0;
   }
 
-  .mobile-links-active {
+
+  .mobile-nav-links {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: visibility 3s ease-in-out, opacity 250ms ease-in-out;
+  }
+
+  .mobile-nav-links.mobile-links-active {
+
+    max-height: max-content;
+    visibility: visible;
+    opacity: 1;
+   
 
     position: sticky;
     padding: 20px 0 40px 0;
@@ -439,7 +453,7 @@ footer {
     z-index: 12;
   }
 
-  .mobile-links-active .navigation {
+  .mobile-nav-links.mobile-links-active .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -474,7 +488,6 @@ footer {
   cursor: pointer;
   font-weight: 700;
 
-  transition: 0.2s ease-in-out;
   }
 
   
