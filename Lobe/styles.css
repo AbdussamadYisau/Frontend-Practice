@@ -93,7 +93,7 @@ nav .navigation {
 }
 
 .mobile-nav-links {
-  /* display: none; */
+  display: none;
 }
 .content {
   margin-top: 80px;
@@ -354,6 +354,8 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+
+
   .nav-wrapper nav {
     display: none;
   }
@@ -452,7 +454,7 @@ footer {
   }
 
   .mobile-nav-links.mobile-links-active .navigation {
-    /* border-top: .5px solid #767676; */
+    
     display: flex;
     flex-direction: column;
     list-style: none;
