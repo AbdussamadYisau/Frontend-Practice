@@ -39,4 +39,8 @@ function clickHamburgerMenu() {
 
   var mobileHamburger = document.getElementById('mobileHamburger');
   mobileHamburger.classList.toggle('active');
+
+  const overlay = document.getElementById('overlay');
+
+  overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
 }

@@ -453,6 +453,17 @@ footer {
 }
 
 
+/* page overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0,0%,100%,.8); 
+  z-index: 1; /* Make sure the overlay is on top of other elements */
+}
 
   .mobile-nav-links {
     max-height: 0;
@@ -474,6 +485,8 @@ footer {
     background: hsla(0, 0%, 100%, 0.97);
     backdrop-filter: blur(20px);
     z-index: 12;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 60px -10px;
   }
 
   .mobile-nav-links .navigation {
