@@ -402,7 +402,6 @@ footer {
 
   .hamburger {
     cursor: pointer;
-    transform: translate(-8px, -1px);
     transform: translate(-9px, -1px);
   }
 
@@ -434,12 +433,33 @@ footer {
     left: 0;
   }
 
+  /* X icon */
+
+  .hamburger.active span {
+    height: 0;
+  }
+
+  .hamburger.active span:after, .hamburger.active span:before {
+    top: 0;
+}
+
+  .hamburger.active span:before {
+    transform: rotate(45deg);
+}
+
+  .hamburger.active span:after {
+    transform: translateY(-5px) rotate(-45deg);
+    top: 5px;
+}
+
+
+
   .mobile-nav-links {
     max-height: 0;
     visibility: hidden;
     opacity: 0;
-    /* display: block; */
-    transition: all 500ms ease-out;
+   backdrop-filter: none;
+    transition: all 500ms ease;
   }
 
   .mobile-nav-links.mobile-links-active {
