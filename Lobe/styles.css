@@ -435,12 +435,12 @@ footer {
     max-height: 0;
     visibility: hidden;
     opacity: 0;
-    overflow: hidden;
-    transition: visibility 3s ease-in-out, opacity 250ms ease-in-out;
+    display: block;
+    transition: all 750ms ease-in-out;
   }
 
   .mobile-nav-links.mobile-links-active {
-    max-height: max-content;
+    max-height: 500px;
     visibility: visible;
     opacity: 1;
 
