@@ -528,7 +528,7 @@ footer {
   .mobile-links-active button {
     visibility: visible;
     opacity: 1;
-    max-height: fit-content;
+    max-height: 50px;
     /* Button styles */
     outline: none;
 
