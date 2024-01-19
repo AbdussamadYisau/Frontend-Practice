@@ -4,7 +4,7 @@ Welcome to Project Lobe! This project is part of the Frontend Practice series, d
 
 ## Overview
 
-Project Lobe is a web page showing the tour section of lobe's website. It includes the implementation of a logo, video overlay and beginner level animations.
+Project Lobe is a web page showing the tour section of lobe's website. It includes the implementation of a logo, video overlay and beginner level animations. Here's a link - [here](https://frontend-practice-4dn3.vercel.app/)
 
 ## Features
 
