@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Neue Montreal Medium';
+    src: url('./fonts/ppneuemontreal-book.otf') format('opentype');
+    /* You can also include other font formats for better compatibility */
+  }
+  
+* {
+    font-family: "Neue Montreal Medium", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+}
+  
+/* Utility classes */
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.grey {
+    color: #7f7f7f;
+}
+
+.light-grey {
+    color: #e8e5e480;
+}
+
+.z-on-top {
+
+    z-index: 1;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main, footer {
+    padding: 0 40px;
+}
+
+nav {
+
+    display: flex;
+    min-height: 48px;
+    max-width: 256px;
+    color: black;
+    background-color: #e8e5e480;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav p {
+    font-size: 12px;
+    padding: 12px 24px;
+}
+
+nav p.active {
+    background-color: white;
+    margin-left: 4px;
+    border-radius: 16px;
+    cursor: pointer;
+    
+}
+
+.what-am-i {
+    margin: 128px 0;
+}
+
+.what-am-i h1 {
+    font-size: 48px;
+    width: 640px;
+    text-align: center;
+}
+
+.skills {
+    margin-top: 32px;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 24px;
+}
+
+.skills p:not(:first-child) {
+    background-color: #e8e5e480;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.image-grids {
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
+    grid-template-rows: repeat(3, 512px);
+    row-gap: 32px;
+    column-gap: 24px;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.image-grids div {
+    background-color: #7f7f7f;
+    border-radius: 12px;
+}
+
+.work-together {
+    text-align: center;
+    margin-bottom: 128px;
+}
+
+.work-together p:first-child {
+    color: black;
+    font-size: 32px;
+}
+
+
+.work-together p:last-child {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 32px;
+}
+.work-together p:last-child:hover {
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+}
+  
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+footer div p {
+    color: black;
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.shop-fixed {
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 96px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-fixed p {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+    main, footer {
+        padding: 0 20px;
+    }
+
+    .skills {
+        display: none;
+    }
+    .image-grids {
+        grid-template-columns: 640px;
+        grid-template-rows: repeat(6,512px);
+    }
+
+    footer {
+        flex-direction: column;
+        gap : 16px;
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    main, footer {
+        padding: 0 20px;
+    }
+
+    .what-am-i h1 {
+        font-size: 32px;
+        width: auto;
+        text-align: center;
+    }
+
+    .skills {
+        display: none;
+    }
+    .image-grids {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(6, 256px) ;
+        gap: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 64px;
+    }
+}
