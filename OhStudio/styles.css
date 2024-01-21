@@ -6,8 +6,8 @@
 
 /* This changes all the animations globally */
 :root {
-    --animate-duration: 900ms;
-    --animate-delay: 4s;
+    --animate-duration: 4s;
+    --animate-delay: 10s;
   }
   
 * {
@@ -57,13 +57,14 @@ nav {
 nav p {
     font-size: 12px;
     padding: 12px 24px;
+    cursor: pointer;
 }
 
 nav p.active {
     background-color: white;
     margin-left: 4px;
     border-radius: 16px;
-    cursor: pointer;
+    
     
 }
 
