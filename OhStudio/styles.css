@@ -3,6 +3,12 @@
     src: url('./fonts/ppneuemontreal-book.otf') format('opentype');
     /* You can also include other font formats for better compatibility */
   }
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 900ms;
+    --animate-delay: 2s;
+  }
   
 * {
     font-family: "Neue Montreal Medium", serif;
@@ -14,22 +20,6 @@
 }
   
 /* Utility classes */
-
-.white {
-    color: white;
-}
-
-.black {
-    color: black;
-}
-
-.grey {
-    color: #7f7f7f;
-}
-
-.light-grey {
-    color: #e8e5e480;
-}
 
 .z-on-top {
 
