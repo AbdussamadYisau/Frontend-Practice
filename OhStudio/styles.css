@@ -7,7 +7,7 @@
 /* This changes all the animations globally */
 :root {
     --animate-duration: 900ms;
-    --animate-delay: 2s;
+    --animate-delay: 4s;
   }
   
 * {
