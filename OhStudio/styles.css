@@ -130,10 +130,10 @@ nav p.active {
 }
   
 .fadeup {
-    transform: translateY(50px);
+    transform: translateY(70px);
     opacity: 0;
     transition-property: transform, opacity;
-    transition-duration: 1s;
+    transition-duration: .5s;
     transition-timing-function: linear;
 }
 
