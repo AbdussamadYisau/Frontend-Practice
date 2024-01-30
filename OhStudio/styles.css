@@ -129,6 +129,18 @@ nav p.active {
     cursor: pointer;
 }
   
+.fadeup {
+    transform: translateY(50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.in-view.fadeup , .in-view .fadeup {
+    transform: none;
+    opacity: 1;
+}
 
 footer {
     display: flex;
