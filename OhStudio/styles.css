@@ -4,11 +4,6 @@
     /* You can also include other font formats for better compatibility */
   }
 
-/* This changes all the animations globally */
-:root {
-    --animate-duration: 4s;
-    --animate-delay: 10s;
-  }
   
 * {
     font-family: "Neue Montreal Medium", serif;
@@ -96,17 +91,87 @@ nav p.active {
 .image-grids {
     display: grid;
     grid-template-columns: repeat(2, 640px);
-    grid-template-rows: repeat(3, 512px);
+    grid-template-rows: repeat(6, 512px);
     row-gap: 32px;
     column-gap: 24px;
     justify-content: center;
     margin-bottom: 128px;
 }
 
-.image-grids div {
+.image-grids .image-grid {
     background-color: #7f7f7f;
     border-radius: 12px;
 }
+
+.image-grids .image-grid .aire {
+    background-image: url('https://framerusercontent.com/images/kfr022WaJ8YJUyZFmdwCB3pXhs.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .correlated {
+    background-image: url('https://framerusercontent.com/images/QVKFKT3dyGxloXfzzpurVKNMM6M.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .blind-date {
+    background-image: url('https://framerusercontent.com/images/AX9PukosNfGVcfXw3YapiYpl9g.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .sapphire {
+    background-image: url('https://framerusercontent.com/images/BAXywubxN8sAhfJg3AgGgFI.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .scuh {
+    background-image: url('https://framerusercontent.com/images/3WALBX7nnuG7p85CLjlVmWPDHw.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .upkid {
+    background-image: url('https://framerusercontent.com/images/e3moUZXfgtjYQY4ILakIMaz4n7s.jpg');
+
+}
+
+
+
+.image-grids .image-grid .glasses {
+    background-image: url('https://framerusercontent.com/images/aH1eUgCIIIrbJF7TUlaKAehoI.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .earnings {
+    background-image: url('https://framerusercontent.com/images/UbS7rWmAwWxjtwM7oaWwRuGo.jpg?scale-down-to=1024');
+
+}
+
+.image-grids .image-grid .basel-world {
+    background-image: url('https://framerusercontent.com/images/hQVBeiDNGU2TfeDJALuhawlcto.jpg?scale-down-to=1024');
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.image-grids .image-grid .cover-image {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 .work-together {
     text-align: center;
@@ -181,7 +246,17 @@ footer ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 12px;
+    cursor: pointer;
 }
+
+.shop-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12"%3E%3Cpath d="M6 0 L6 12 M0 6 L12 6 M1.757 1.758 L10.243 10.242 M1.758 10.243 L10.242 1.757" fill="transparent" stroke-width="1.45" stroke="rgb(255,255,255)" stroke-miterlimit="10"%3E%3C/path%3E%3C/svg%3E');
+    width: 12px; /* Adjust the width and height as needed */
+    height: 12px;
+}
+
 
 .shop-fixed p {
     font-size: 12px;
