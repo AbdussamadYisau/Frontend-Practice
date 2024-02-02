@@ -272,7 +272,7 @@ footer ul li a {
     }
     .image-grids {
         grid-template-columns: 640px;
-        grid-template-rows: repeat(6,512px);
+        grid-template-rows: repeat(12,512px);
     }
 
     footer {
@@ -299,7 +299,7 @@ footer ul li a {
     }
     .image-grids {
         grid-template-columns: 300px;
-        grid-template-rows: repeat(6, 256px) ;
+        grid-template-rows: repeat(12, 256px) ;
         gap: 16px;
     }
 
