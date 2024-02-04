@@ -324,6 +324,43 @@ footer ul li a {
     font-size: 12px;
 }
 
+.logoAndName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.logo {
+    flex: 0 0 auto;
+    height: 30px;
+    overflow: visible;
+    position: relative;
+    width: 30px;
+}
+
+.logo-container {
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    height: 30px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    animation: rotate 5s infinite linear;
+}
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 @media screen and (max-width: 1023px) {
     main, footer {
         padding: 0 20px;
@@ -355,6 +392,10 @@ footer ul li a {
         flex-direction: column;
         gap : 16px;
         margin-bottom: 64px;
+    }
+
+    .logoAndName {
+        flex-direction: column;
     }
 }
 
