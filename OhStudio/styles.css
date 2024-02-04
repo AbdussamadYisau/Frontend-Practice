@@ -101,6 +101,7 @@ nav p.active {
 .image-grids .image-grid {
     background-color: #7f7f7f;
     border-radius: 12px;
+    height: 100%;
 }
 
 .image-grids .image-grid .aire {
@@ -231,7 +232,7 @@ nav p.active {
 }
 
 .mobile-grid-text {
-    /* display: none; */
+    display: none;
 }
 
 .work-together {
@@ -333,12 +334,15 @@ footer ul li a {
     }
     .image-grids {
         grid-template-columns: 640px;
+        
         grid-template-rows: repeat(12,512px);
     }
 
 
     .mobile-grid-text {
-        /* display: block; */
+        display: block;
+        font-size: 14px;
+        margin-top: 8px;
     }
 
     footer {
@@ -366,7 +370,7 @@ footer ul li a {
     .image-grids {
         grid-template-columns: 300px;
         grid-template-rows: repeat(12, 256px) ;
-        gap: 16px;
+        gap: 36px;
     }
 
     footer {
