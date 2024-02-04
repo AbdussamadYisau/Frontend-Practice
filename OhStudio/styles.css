@@ -338,10 +338,17 @@ footer ul li a {
         grid-template-rows: repeat(12,512px);
     }
 
+    .grid-image-hover-content {
+        display: none;
+    }
+
+    .grid-image-hover {
+        display: none;
+    }
 
     .mobile-grid-text {
         display: block;
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 8px;
     }
 
