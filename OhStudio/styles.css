@@ -338,14 +338,13 @@ footer ul li a {
         grid-template-rows: repeat(12,512px);
     }
 
-    .grid-image-hover-content {
-        display: none;
+    .image-grid:hover .grid-image-hover, .image-grid:hover .grid-image-hover-content {
+        display: none; /* Don't show on hover */
     }
-
-    .grid-image-hover {
-        display: none;
+    
+    .image-grid:hover .cover-image {
+        filter: none; /* Remove blur effect on hover */
     }
-
     .mobile-grid-text {
         display: block;
         font-size: 16px;
