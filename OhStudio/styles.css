@@ -96,6 +96,7 @@ nav p.active {
     column-gap: 24px;
     justify-content: center;
     margin-bottom: 128px;
+    transition-delay: 1s;
 }
 
 .image-grids .image-grid {
@@ -373,6 +374,7 @@ footer ul li a {
         grid-template-columns: 640px;
         
         grid-template-rows: repeat(12,512px);
+        transition-delay: .5s;
     }
 
     .image-grid:hover .grid-image-hover, .image-grid:hover .grid-image-hover-content {
