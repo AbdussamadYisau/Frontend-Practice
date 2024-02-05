@@ -211,7 +211,7 @@ nav p.active {
     display: flex; /* Show on hover */
 }
 
-.image-grid:hover .cover-image {
+.image-grid:hover .cover-image, .image-grid:hover .cover-video {
     filter: blur(8px); /* Apply a blur effect on hover */
 }
 
