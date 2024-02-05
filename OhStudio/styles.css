@@ -64,7 +64,12 @@ nav p.active {
 }
 
 .what-am-i {
-    margin: 128px 0;
+    margin: 128px 0 0 0;
+}
+
+.what-am-i.skill {
+    margin-top: 32px;
+    margin-bottom: 128px;
 }
 
 .what-am-i h1 {
@@ -74,7 +79,9 @@ nav p.active {
 }
 
 .skills {
-    margin-top: 32px;
+    
+    
+    
     display: flex;
     gap: 12px;
     justify-content: space-between;
@@ -261,13 +268,20 @@ nav p.active {
     opacity: 0;
     transition-property: transform, opacity;
     transition-duration: .5s;
-    transition-timing-function: linear;
+    transition-timing-function: ease-out;
 }
 
+.image-grids.fadeup {
+    /* transition-duration: .75s; */
+    /* transition-delay: .75s; */
+}
+
+
 .in-view.fadeup , .in-view .fadeup {
-    transform: none;
+    transform: translateY(0px);
     opacity: 1;
 }
+
 
 footer {
     display: flex;
