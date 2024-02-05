@@ -184,12 +184,20 @@ nav p.active {
     position: absolute;
     width: 100%;
     top: 10px;
-    display: none;
+    display: flex;
+    opacity: 0;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 40px;
     align-items: center;
     background-color: transparent;
     z-index: 2;
+    transition-property: opacity, padding;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+.image-grid:hover .grid-image-hover-content {
+    opacity: 1;
+    padding: 0 10px;
 }
 
 .grid-image-hover {
@@ -207,8 +215,9 @@ nav p.active {
     z-index: 1; /* Place it above the cover image */
 }
 
-.image-grid:hover .grid-image-hover, .image-grid:hover .grid-image-hover-content {
+.image-grid:hover .grid-image-hover {
     display: flex; /* Show on hover */
+   
 }
 
 .image-grid:hover .cover-image, .image-grid:hover .cover-video {
@@ -223,7 +232,6 @@ nav p.active {
 }
 
 .arrow-background {
-   
     padding: 12px;
     border-radius: 100px;
     background-color: white;
