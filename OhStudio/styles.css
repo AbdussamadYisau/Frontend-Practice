@@ -353,6 +353,8 @@ footer ul li a {
     animation: rotate 5s infinite linear;
 }
 
+
+
   @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -362,6 +364,8 @@ footer ul li a {
       transform: rotate(360deg);
     }
   }
+
+
 @media screen and (max-width: 1023px) {
     main, footer {
         padding: 0 20px;
