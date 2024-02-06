@@ -7,6 +7,11 @@
   font-size: 62.5%;
 }
 
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
 p {
     color: #251d20;
     font-size: 18px;
