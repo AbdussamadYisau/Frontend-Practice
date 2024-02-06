@@ -7,38 +7,182 @@
   font-size: 62.5%;
 }
 
-html {
-  font-family: sans-serif;
-  scroll-snap-type: y mandatory;
-  background-color: transparent;
+p {
+    color: #251d20;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
 }
-section {
-  /* border-bottom: 1px solid white; */
+
+.header {
+    padding-top: 20px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    z-index: 2;
+  
+}
+
+.right-header {
+    padding-top: 20px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    z-index: 2;
+}
+
+.right-header .contact {
+    text-align: right;
+}
+
+.right-header .contact a {
+    text-decoration: none;
+    color:#251d20;
+    font-size: 18px;
+}
+
+.header img {
+    width: 260px;
+    height: auto;
+}
+
+footer {
+    padding-bottom: 20px;
+    position: absolute;
+    left: 22px;
+    bottom: 0;
+    z-index: 2;
+}
+
+footer .description {
+    width: 320px;
+}
+
+footer .description .copyright {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+footer .description .copyright a {
+    font-size: inherit;
+    font-weight: inherit;
+    color: #251d20;
+    text-decoration: underline;
+}
+
+.privacy-policy {
+    color: #251d20;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.menu {
+    position: absolute;
+    padding-bottom: 20px;
+    bottom: 0px;
+    right: 15px;
+    width: 200px;
+    text-align: right;
+    z-index: 2;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #251d20;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Add this CSS to style active anchor links */
+.menu a:active,
+.menu a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    
+}
+main > section {
   padding: 1rem;
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   text-align: center;
   position: relative;
+  scroll-padding-top: 30px;
+  scroll-padding-bottom: 60px;
 }
-h1 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: black;
-  width: 100%;
-  left: 0;
-  font-size: calc(1rem + 3vw);
+
+.middle {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle .cover-image {
+    width: 420px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+.issue-text {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #251d20;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.buy-here {
+    margin-top: 0;
+    color: #251d20;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 3px;
+    line-height: 22px;
+}
+
+p.buy-here {
+    margin-bottom: 15px;
+} 
+
+.buy-here a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 
 .section-one {
     background-color: #ff608c;
+
 }
 
 .section-two {
     background-color: white;
+}
+
+.section-two .buy-here a {
+    color: #e568ac;
 }
 
 .section-three {
@@ -60,3 +204,4 @@ h1 {
 .section-seven {
     background-color: #E30512;
 }
+
