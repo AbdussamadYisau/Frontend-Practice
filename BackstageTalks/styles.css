@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto',sans-serif;
+  font-size: 62.5%;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-snap-type: y mandatory;
+  background-color: transparent;
+}
+section {
+  /* border-bottom: 1px solid white; */
+  padding: 1rem;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: black;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
+
+
+.section-one {
+    background-color: #ff608c;
+}
+
+.section-two {
+    background-color: white;
+}
+
+.section-three {
+    background-color: #00c1b5;
+}
+
+.section-four {
+    background-color: #ff6519;
+}
+
+.section-five {
+    background-color: #ffbe00;
+}
+
+.section-six {
+    background-color: #1d3fbb;
+}
+
+.section-seven {
+    background-color: #E30512;
+}
