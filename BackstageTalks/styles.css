@@ -210,3 +210,35 @@ p.buy-here {
     background-color: #E30512;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .right-header {
+        display: none;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 12px; /* width of the scrollbar */
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* color of the scrollbar track */
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* color of the scrollbar thumb */
+        border-radius: 6px; /* roundness of the scrollbar thumb */
+      }
+
+    .menu {
+        display: none;
+    }
+
+    .footer .description {
+        margin-top: 0px;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: auto;
+    }
+}
