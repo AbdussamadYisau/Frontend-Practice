@@ -213,8 +213,23 @@ p.buy-here {
 
 
 @media screen and (max-width: 768px) {
+
+    main > section {
+       
+       scroll-snap-stop: proximity;
+     
+        scroll-padding-top: 30px;
+      
+      }
+      
     .right-header {
         display: none;
+    }
+
+    .middle .cover-image {
+        width: 80%;
+        max-width: 420px;
+        height: auto;
     }
     
     ::-webkit-scrollbar {
@@ -234,11 +249,7 @@ p.buy-here {
         display: none;
     }
 
-    .footer .description {
-        margin-top: 0px;
-        position: relative;
-        left: auto;
-        bottom: auto;
-        width: auto;
+    footer .description {
+        display: none;
     }
 }
