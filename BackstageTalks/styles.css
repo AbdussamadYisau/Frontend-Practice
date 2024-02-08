@@ -218,6 +218,12 @@ p.buy-here {
 
 @media screen and (max-width: 768px) {
 
+    main {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: none;
+        
+    }
       
     .right-header {
         display: none;
