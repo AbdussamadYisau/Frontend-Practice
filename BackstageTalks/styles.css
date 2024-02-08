@@ -261,4 +261,8 @@ p.buy-here {
 
         margin-top: 200px;
     }
+
+    .section-seven {
+        overflow: scroll;
+    }
 }
