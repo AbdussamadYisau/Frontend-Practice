@@ -40,7 +40,7 @@ p {
     text-align: right;
 }
 
-.right-header .contact a {
+.right-header .contact a, .mobile-description .contact a {
     text-decoration: none;
     color:#251d20;
     font-size: 18px;
@@ -63,12 +63,12 @@ footer .description {
     width: 320px;
 }
 
-footer .description .copyright {
+footer .description .copyright, .mobile-description .description .copyright {
     font-size: 12px;
     font-weight: normal;
 }
 
-footer .description .copyright a {
+footer .description .copyright a, .mobile-description .description .copyright a {
     font-size: inherit;
     font-weight: inherit;
     color: #251d20;
@@ -210,10 +210,15 @@ p.buy-here {
     background-color: #E30512;
 }
 
+.mobile-description {
+    display: none;
+}
+
 
 
 @media screen and (max-width: 768px) {
 
+      
     .right-header {
         display: none;
     }
@@ -243,5 +248,17 @@ p.buy-here {
 
     footer .description {
         display: none;
+    }
+
+    .mobile-description {
+        margin: 0 8px;
+        text-align: center;
+        display: flex;
+        gap: 48px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 200px;
     }
 }
