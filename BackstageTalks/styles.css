@@ -214,14 +214,6 @@ p.buy-here {
 
 @media screen and (max-width: 768px) {
 
-    main > section {
-       
-       scroll-snap-stop: proximity;
-     
-        scroll-padding-top: 30px;
-      
-      }
-      
     .right-header {
         display: none;
     }
